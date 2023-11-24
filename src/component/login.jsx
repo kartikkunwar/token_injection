@@ -39,9 +39,13 @@ export const Login=()=>{
     }
 
     const checkdata=()=>{
-        if(pass||message||log.username===""||log.password===""){
-           setMessage(true)
+        if(pass){
            setPass(true)
+        }else if(message){
+            setMessage(true)
+        }else if(log.username===""||log.password===""){
+            setMessage(true)
+            setPass(true)
         }else{
             setMessage(false)
             setPass(false)
