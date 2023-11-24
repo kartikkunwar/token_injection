@@ -25,7 +25,6 @@ export const getLoginToken=(login)=>(dispatch)=>{
 }
 
 export const getSingleProduct=(id,token)=>(dispatch)=>{
-    console.log(token)
     return axiosInstance.get(`https://fakestoreapi.com/products/${id}`)
     .then((res)=>{
         return dispatch({type:types.GET_SUCCESS_SINGLE,payload:res.data})

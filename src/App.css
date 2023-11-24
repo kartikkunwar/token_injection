@@ -58,3 +58,12 @@ input {
   width: 100%;
   height: 400px;
 }
+span{
+  color: red;
+}
+.dropdown{
+  width: 10%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
